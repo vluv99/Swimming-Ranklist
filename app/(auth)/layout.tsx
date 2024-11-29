@@ -11,8 +11,9 @@ function AuthLayout({ children }: Props): ReactNode {
       <div className="h-full lg:flex flex-col items-center justify-center px-4">
         <div className="text-center space-y-4 pt-16">
           <h1 className="font-bold text-3xl text-[#2E2A47]">Welcome back!</h1>
-          <p className="text-base text-[#7E8CA0]">
-            Log in or Create an account to check out the rank lists!
+          <p className="text-base text-[#7E8CA0] w-3/4 justify-self-center">
+            Log in or Create an account to check out the Hungarian Swimming
+            Records between 2000 - 2024.
           </p>
           <div className="flex items-center justify-center mt-8">
             {children}
