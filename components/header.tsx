@@ -12,7 +12,7 @@ export function Header() {
           <div className="flex items-center lg:gap-x-16">
             <HeaderLogo />
           </div>
-          <div className="flex justify-end items-center lg:gap-x-4">
+          <div className="flex justify-end items-center gap-x-2 lg:gap-x-4">
             <LanguageSelect />
             <ThemeSwitcher />
             <ClerkLoaded>

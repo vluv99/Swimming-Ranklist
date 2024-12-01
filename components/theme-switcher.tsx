@@ -1,14 +1,13 @@
 "use client";
 
 import { MoonIcon, SunIcon } from "lucide-react";
-import { useState } from "react";
 import { useIsDarkTheme } from "@/providers/themeProvider";
 import { Button } from "@/components/ui/button";
 
 export function ThemeSwitcher() {
   const { toggleColorMode, isDarkTheme } = useIsDarkTheme();
 
-  const classes = "size-8 text-white";
+  const classes = "text-white";
   return (
     <div>
       <Button
