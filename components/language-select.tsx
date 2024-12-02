@@ -9,7 +9,7 @@ import {
 export function LanguageSelect() {
   return (
     <Select>
-      <SelectTrigger className="w-auto ml-1">
+      <SelectTrigger className="w-auto">
         <SelectValue placeholder="Language" />
       </SelectTrigger>
       <SelectContent>
