@@ -1,7 +1,8 @@
 import { HeaderLogo } from "@/components/header-logo";
-import { ClerkLoaded, ClerkLoading, UserButton } from "@clerk/nextjs";
+import { ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
 import { Loader2 } from "lucide-react";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { ThemedUserButton } from "@/components/clerk-themed-components";
 //import { LanguageSelect } from "@/components/language-select";
 
 export function Header() {
@@ -16,7 +17,7 @@ export function Header() {
             {/*<LanguageSelect />*/}
             <ThemeSwitcher />
             <ClerkLoaded>
-              <UserButton />
+              <ThemedUserButton />
             </ClerkLoaded>
             <ClerkLoading>
               <Loader2 className="size-8 animate-spin text-slate-400" />

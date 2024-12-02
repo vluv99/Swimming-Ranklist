@@ -1,18 +1,16 @@
-import { ClerkLoaded, ClerkLoading, SignUp } from "@clerk/nextjs";
+import { ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
 import { Loader2 } from "lucide-react";
-import { AuthLayout } from "@/app/(auth)/_components/auth-layout";
+import { ThemedSignUp } from "@/components/clerk-themed-components";
 
 export default function SignUpPage() {
   return (
-    // <AuthLayout>
     <>
       <ClerkLoaded>
-        <SignUp path="/sign-up" />
+        <ThemedSignUp path="/sign-up" />
       </ClerkLoaded>
       <ClerkLoading>
         <Loader2 className="animate-spin text-muted-foreground" />
       </ClerkLoading>
     </>
-    // </AuthLayout>
   );
 }
